@@ -14,7 +14,7 @@ async function sendEmail(recipient, message) {
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
       to: recipient,
-      subject: 'Message from Salesforce',
+      subject: '🚨🚨🚨'+message,
       text: message
     });
     return { success: true, info: 'Email sent.' };
